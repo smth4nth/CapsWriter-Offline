@@ -49,7 +49,7 @@ class ModelPaths:
     """模型文件路径配置"""
 
     # 基础目录
-    model_dir = Path() / 'models'
+    model_dir = Path(__file__).resolve().parent / 'models'
 
     # Paraformer 模型路径
     paraformer_dir = model_dir / 'Paraformer' / "speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-onnx"
